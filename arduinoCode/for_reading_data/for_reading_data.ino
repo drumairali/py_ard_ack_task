@@ -16,4 +16,6 @@ Serial.println(a);
 
 }
 
+Serial.flush();
+
 }

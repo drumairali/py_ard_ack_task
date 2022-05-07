@@ -1,3 +1,5 @@
+"""merge txt files"""
+
 def generate_move(name_file):
     """This function takes file names and then concatenate their data to single move.txt file"""
     move = ""

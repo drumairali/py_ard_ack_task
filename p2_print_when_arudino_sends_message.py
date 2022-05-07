@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# lsusb to check device name
-#dmesg | grep "tty" to find port name
+"""send data from python to arduino serially"""
 
 import serial,time
 
@@ -21,3 +18,25 @@ while True:
     num = input("Enter a number: ") # Taking input from user
     value = write_(num)
     
+    
+# arduinoCode below 
+
+# String a;
+
+# void setup() {
+
+# Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
+
+# }
+
+# void loop() {
+
+# while(Serial.available()) {
+
+# a= Serial.readString();// read the incoming data as string
+
+# Serial.println(a);
+
+# }
+
+# }
