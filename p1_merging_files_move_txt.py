@@ -9,7 +9,9 @@ def generate_move(name_file):
         f.write(move)
     return move
     
-list_file= ["PICKUP_GCODE.txt","STEM_CUTTING_GCODE(STATIC).txt","DROPOFF_GCODE2.txt","DROPOFF_GCODE.txt"]
+directory = "txtfiles/"
+list_file= [directory+"PICKUP_GCODE.txt",directory+"STEM_CUTTING_GCODE(STATIC).txt",\
+            directory+"DROPOFF_GCODE2.txt",directory+"DROPOFF_GCODE.txt"]
 oo = generate_move(list_file)
             
         
