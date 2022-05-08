@@ -1,21 +1,10 @@
-String a;
-
 void setup() {
-
-Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
-
+  Serial.begin(9600);
 }
-
 void loop() {
-
-while(Serial.available()) {
-
-a= Serial.readString();// read the incoming data as string
-
-Serial.println(a);
-
-}
-
-Serial.flush();
-
+  if (Serial.available() > 0) {
+    String data = Serial.readStringUntil('\n');
+    Serial.print("You sent me: ");
+    Serial.println(data);
+  }
 }
